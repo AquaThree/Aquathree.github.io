@@ -273,4 +273,8 @@ a:hover {
     #header #panel #nav #button a:hover {
         color: rgba(62, 190, 211);
     }
+
+    #about #panel {
+        width: 100%;
+    }
 }

@@ -138,7 +138,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: f5f5f5;
-    padding: 28em 0 28em 0;
+    padding: 32em 0 30em 0;
 }
 
 #archives #panel {
@@ -152,7 +152,7 @@ a:hover {
     backdrop-filter: blur(50px);
     border-radius: 10px;
     text-align: center;
-    transform: scale3d(1, 1, 1);
+    transform: scale(1.0);
     transition: 0.5s;
 }
 
@@ -165,8 +165,15 @@ a:hover {
     margin: 0 2em 0 2em;
 }
 
-#archives #panel #year:before,
-#archives #panel #year:after {
+#archives #panel #year #name {
+    display: block;
+    position: relative;
+    font-size: 1.0em;
+    font-weight: 600;
+}
+
+#archives #panel #year #name:before,
+#archives #panel #year #name:after {
 	content: "";
     position: absolute;
 	height: 20px;
@@ -197,7 +204,7 @@ a:hover {
 	left: 106%;
     background-color: rgba(255, 255, 255);
     border-radius: 100%;
-    transform: scale3d(1, 1, 1);
+    transform: scale(1.0);
     transition: 0.5s;
 }
 
@@ -222,14 +229,10 @@ a:hover {
 }
 
 #footer .copyright {
-    color: #999;
+    color: rgba(153 153 153);
     font-weight: 200;
     line-height: 1em;
     margin: 1em 0 1em 0;
-}
-
-@media screen and (max-width: 880px) {
-
 }
 
 @media screen and (max-width: 500px) {
@@ -239,5 +242,9 @@ a:hover {
 
     #header #panel #nav #button a:hover {
         color: rgba(62, 190, 211);
+    }
+
+    #archives #panel {
+        width: 100%;
     }
 }

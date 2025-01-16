@@ -1,5 +1,4 @@
 function onLoad() {
-
 }
 
 function openButtonAnim(name) {
@@ -14,11 +13,19 @@ function closeButtonAnim(name) {
     }
 }
 
-function goLearnMore() {
+function clickGoLearnMoreButton() {
     window.scrollTo({
         top: document.getElementById("header").scrollHeight + document.getElementById("banner").scrollHeight,
         behavior: "smooth"
     });
+}
+
+function clickOpenPopupButton() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function clickClosePopupButton() {
+    document.getElementById("popup").style.display = "none";
 }
 
 onLoad();

@@ -1,5 +1,5 @@
 function setTime() {
-    var time = new Date("2025-1-28").getTime();
+    var time = new Date("2025-1-29").getTime();
     var nowTime = Date.now();
     if(nowTime < time){
         var timestamp = Math.round((time - nowTime) / 1000);
